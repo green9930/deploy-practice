@@ -1,0 +1,55 @@
+.movieMain {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .searchBox {
+      width: 350px;
+      height: 50px;
+      outline: none;
+      border: 3px solid #111;
+      background-color: #fee;
+      margin-right: 20px;
+    }
+
+    .searchButton {
+      width: 50px;
+      height: 50px;
+      border: 3px solid #111;
+      background-color: #fee;
+      font-weight: 700;
+    }
+  }
+
+  .movieList {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+
+    .movieListItem {
+      border: 3px solid black;
+      border-radius: 5px;
+      background-color: #fee;
+      margin: 30px 30px;
+      display: flex;
+      justify-content: center;
+
+      figcaption {
+        margin-top: 20px;
+        text-align: center;
+        font: {
+          weight: 700;
+          size: 16px;
+        }
+      }
+    }
+  }
+}
